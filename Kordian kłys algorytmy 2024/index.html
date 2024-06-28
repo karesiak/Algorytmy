@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorytmy: Funkcja Sześcienna, Wielomian do potęgi 5, Monte Carlo, Sito Eratostenesa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="cubicFunction">
+        <h1>Obliczanie Funkcji Sześciennej</h1>
+        <form id="functionFormCubic">
+            <div class="input-group">
+                <label for="a">a:</label>
+                <input type="number" id="a" required>
+            </div>
+            <div class="input-group">
+                <label for="b">b:</label>
+                <input type="number" id="b" required>
+            </div>
+            <div class="input-group">
+                <label for="c">c:</label>
+                <input type="number" id="c" required>
+            </div>
+            <div class="input-group">
+                <label for="d">d:</label>
+                <input type="number" id="d" required>
+            </div>
+            <div class="input-group">
+                <label for="x">x:</label>
+                <input type="number" id="x" required>
+            </div>
+            <div id="resultCubic"></div>
+            <button type="submit">Oblicz</button>
+        </form>
+    </div>
+
+    <div class="container" id="polynomialFunction">
+        <h1>Obliczanie Wielomianu do potęgi 5</h1>
+        <form id="functionFormPolynomial">
+            <div class="input-group">
+                <label for="a0">a0:</label>
+                <input type="number" id="a0" required>
+            </div>
+            <div class="input-group">
+                <label for="a1">a1:</label>
+                <input type="number" id="a1" required>
+            </div>
+            <div class="input-group">
+                <label for="a2">a2:</label>
+                <input type="number" id="a2" required>
+            </div>
+            <div class="input-group">
+                <label for="a3">a3:</label>
+                <input type="number" id="a3" required>
+            </div>
+            <div class="input-group">
+                <label for="a4">a4:</label>
+                <input type="number" id="a4" required>
+            </div>
+            <div class="input-group">
+                <label for="a5">a5:</label>
+                <input type="number" id="a5" required>
+            </div>
+            <div class="input-group">
+                <label for="x_poly">x:</label>
+                <input type="number" id="x_poly" required>
+            </div>
+            <div id="resultPolynomial"></div>
+            <button type="submit">Oblicz</button>
+        </form>
+    </div>
+
+    <div class="container" id="monteCarlo">
+        <h1>Oszacowanie wartości Pi metodą Monte Carlo</h1>
+        <form id="monteCarloForm">
+            <div class="input-group">
+                <label for="proby">Liczba prób:</label>
+                <input type="number" id="proby" required>
+            </div>
+            <div id="resultMonteCarlo"></div>
+            <button type="submit">Oblicz</button>
+        </form>
+    </div>
+
+    <div class="container" id="sieveOfEratosthenes">
+        <h1>Sito Eratostenesa</h1>   
+        <form id="sieveForm">
+            <div class="input-group">
+                <label for="n">Podaj wartość n:</label>
+                <input type="number" id="n" required>
+            </div>
+            <div id="resultSieve"></div>
+            <button type="submit">Oblicz</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
